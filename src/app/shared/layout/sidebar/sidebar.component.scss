@@ -1,0 +1,65 @@
+.mat-drawer {
+  background-color: #165c7d;
+
+  .ailos-menu {
+    margin-top: 12px;
+
+    .ailos-menu-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 60px;
+      }
+    }
+  }
+}
+.mat-drawer-content {
+  background: #e8eff2;
+  width: 100%;
+  display: inline;
+}
+
+.mat-drawer-container {
+  height: 100vh;
+}
+
+.active {
+  color: #fff !important;
+}
+
+.mat-drawer-side {
+  border: none;
+}
+
+mat-drawer {
+  width: 78px !important;
+  height: 100vh;
+}
+
+mat-icon {
+  color: #b3b3b3;
+}
+
+mat-list-item {
+  span {
+    color: #768d85;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+  }
+}
+
+.mat-list-item-content {
+  flex-direction: column !important;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 480px) {
+  mat-drawer {
+    display: none !important;
+  }
+}
+
+

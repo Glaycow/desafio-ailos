@@ -1,0 +1,44 @@
+{
+  "cooperado": [
+    {
+      "id": 1,
+      "cpf": "23973204284",
+      "name": "Ryan Luís Mendes",
+      "situation": "Regular",
+      "accountNumber": "767921-9",
+      "cc": "245895-4"
+    },
+    {
+      "id": 2,
+      "cpf": "97712843120",
+      "name": "Thiago Bernardo Ryan Nunes",
+      "situation": "Regular",
+      "accountNumber": "8542982-1",
+      "cc": "741462-0"
+    },
+    {
+      "id": 3,
+      "cpf": "51770924108",
+      "name": "Vicente Benjamin Novaes",
+      "situation": "Regular",
+      "accountNumber": "593415-4",
+      "cc": "128934-7"
+    },
+    {
+      "id": 4,
+      "cpf": "70559695144",
+      "name": "Cauê Martin Ramos",
+      "situation": "Regular",
+      "accountNumber": "853615-3",
+      "cc": "822556-9"
+    },
+    {
+      "id": 5,
+      "cpf": "06631465184",
+      "name": "Esther Stella Allana Martins",
+      "situation": "Regular",
+      "accountNumber": "854875-3",
+      "cc": "845246-7"
+    }
+  ]
+}

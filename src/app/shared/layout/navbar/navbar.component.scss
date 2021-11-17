@@ -1,0 +1,61 @@
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+  height: 90px;
+}
+.mat-toolbar {
+  background-color: #fff;
+  .aiolos-navbar {
+    display: flex;
+    width: 94%;
+    flex-wrap: wrap;
+
+    .text-wrapper {
+      display: flex;
+      flex-direction: column;
+      line-height: 26px;
+
+      .text-navbar-aiolos {
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      .breadcrumbs {
+        font-size: 14px;
+        color: #b9b8b8;
+      }
+    }
+
+    .aiolos-user-menu {
+      display: flex;
+      justify-content: flex-end;
+      flex: 1;
+      align-items: center;
+
+      mat-icon {
+        color: #165c7d;
+        margin-right: 16px;
+      }
+
+      .user-type {
+        border: 1px solid #165c7d;
+        border-radius: 16px;
+        padding: 0 16px;
+        color: #165c7d;
+        font-weight: 600;
+        font-size: 16px;
+        margin-right: 16px;
+      }
+      .user-aiolos {
+        display: flex;
+        align-items: center;
+        align-self: center;
+
+        img {
+          width: 50px;
+          border-radius: 100%;
+          border: 2px solid #165c7d;
+        }
+      }
+    }
+  }
+}
