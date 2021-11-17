@@ -32,11 +32,8 @@
         <div class="invalid-feedback" *ngIf="displayMessage['cpf']" >
           <p [innerHTML]="displayMessage['cpf']"></p>
         </div>
-
       </div>
     </form>
-
-    {{msgValidacao}}
     <h5 *ngIf="msgValidacao !== undefined" class="aiolos-msg-validacao">
       {{msgValidacao}}
     </h5>
