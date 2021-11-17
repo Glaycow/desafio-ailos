@@ -1,0 +1,57 @@
+<div class="cooperado-info">
+  <div class="cooperado-cards" *ngIf="cooperado">
+    <div class="card">
+      <div class="info-wrapper">
+        <span class="title">Situação Cadastral do CPF</span>
+        <span class="sub-title">Consulta na Receita Federal</span>
+      </div>
+      <div class="name-wrapper">
+        <mat-icon>person</mat-icon>
+        <div class="cooperado">
+          <span class="label">Nome</span>
+          <span class="nome">{{cooperado.name}}</span>
+        </div>
+      </div>
+      <div class="name-wrapper">
+        <mat-icon class="green">check_circle_outlined</mat-icon>
+        <div class="cooperado">
+          <span class="label">Situação do CPF</span>
+          <span class="nome">{{cooperado.situation}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="info-wrapper">
+        <span class="title">Conta aplicação</span>
+        <span class="sub-title">Cooperativa Viacredi</span>
+      </div>
+      <div class="name-wrapper">
+        <mat-icon>payment</mat-icon>
+        <div class="cooperado">
+          <span class="label">Número da conta</span>
+          <span class="nome">{{cooperado.accountNumber}}</span>
+        </div>
+      </div>
+      <div class="name-wrapper">
+        <a>Duplicar Conta</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="info-wrapper">
+        <span class="title">Conta Corrente</span>
+        <span class="sub-title">Cooperativa Viacredi</span>
+      </div>
+      <div class="name-wrapper">
+        <mat-icon>payment</mat-icon>
+        <div class="cooperado">
+          <span class="label">Número da conta</span>
+          <span class="nome">{{cooperado.cc}}</span>
+        </div>
+      </div>
+      <div class="name-wrapper">
+        <a>Duplicar Conta</a>
+      </div>
+    </div>
+
+  </div>
+</div>
