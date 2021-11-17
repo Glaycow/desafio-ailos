@@ -1,7 +1,7 @@
 # Ailos
 Projeto é um desafio da empresa Ailos que tem como objetivo a validação do CPF e o carregamento das informações do cooperado.
 
-##Tecnologias
+## Tecnologias
 
 - [Node](https://nodejs.org/en/) Versão 16.13.0.
 - [Angular](https://angular.io/docs) Versão 13.0.0.
@@ -11,7 +11,7 @@ Projeto é um desafio da empresa Ailos que tem como objetivo a validação do CP
 - [Ngx Mask](https://github.com/JsDaddy/ngx-mask)
 
 
-##Como executar o projeto
+## Como executar o projeto
 
 Realize o clone `git clone https://github.com/Glaycow/desafio-ailos.git` do projeto.
 Agora instale as dependências do projeto com o comando `npm install` na pasta raiz do projeto.
@@ -22,7 +22,7 @@ Caso não tenha o mesmo instalado na máquina rodar o comando em um terminal `np
 
 Rodar o comando `ng serve` na raiz do projeto para inicializar o servidor de desenvolvimento do angular. Após o processo de inicialização do servidor estiver concluída navegue até a rota `http://localhost:4200/` para utilizar a aplicação.
 
-##Cooperados Disponíveis
+## Cooperados Disponíveis
 As informação referentes aos cooperado foi gerado utilizando o site [4devs](https://www.4devs.com.br/gerador_de_pessoas)
 
 
@@ -33,10 +33,10 @@ As informação referentes aos cooperado foi gerado utilizando o site [4devs](ht
 5. Esther Stella Allana Martins, CPF: 066.314.651-84.
 
 
-##Autor
+## Autor
 Glaycow Silveira Silva e Souza.
 
-##Licença
+## Licença
 MIT
 
 Software Livre, É isto!
