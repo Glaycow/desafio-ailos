@@ -1,0 +1,55 @@
+<div class="container-fluid">
+  <div class="stepper-wrapper">
+    <div class="stepper">
+      <ul class="progressbar">
+        <li class="active"><span>Início</span></li>
+        <li><span>Documentos</span></li>
+        <li><span>Dados Cadastrais</span></li>
+        <li><span>Admissão</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="aiolos-user-info">
+    <div class="text-wrapper">
+      <span class="text-bold">Informe o CPF do futuro Cooperado (a)</span>
+      <span>Se necessário você poderá duplicar uma conta existente ou passar a retomar este cadastro futuramente.</span>
+      <span>Digite apenas os números (sem pontos ou traços).</span>
+    </div>
+
+    <form [formGroup]="cooperadoForm" (ngSubmit)="buscarCooperado()" novalidate>
+      <div class="aiolos-form-group">
+        <label for="cpf">CPF</label>
+        <input type="text" id="cpf"
+               formControlName="cpf"
+               class="form-control input-aiolos"
+               placeholder="000.000.000-00"
+               mask="000.000.000-00"
+               required
+               [ngClass]="{'is-invalid' : displayMessage['cpf']}"
+        >
+        <button type="submit">Consultar por CPF</button>
+        <div class="invalid-feedback" *ngIf="displayMessage['cpf']" >
+          <p [innerHTML]="displayMessage['cpf']"></p>
+        </div>
+
+      </div>
+    </form>
+
+    {{msgValidacao}}
+    <h5 *ngIf="msgValidacao !== undefined" class="aiolos-msg-validacao">
+      {{msgValidacao}}
+    </h5>
+
+    <h5 *ngIf="msgConsultaCooperado !== undefined" class="aiolos-msg-validacao">
+      {{msgConsultaCooperado}}
+    </h5>
+  </div>
+
+  <app-cooperado-info-view [cooperado]="cooperado"></app-cooperado-info-view>
+
+  <div class="aiolos-footer">
+    <button *ngIf="cooperado" class="new-coop">Iniciar nova admissão</button>
+    <button>Dicas para admissão</button>
+  </div>
+</div>

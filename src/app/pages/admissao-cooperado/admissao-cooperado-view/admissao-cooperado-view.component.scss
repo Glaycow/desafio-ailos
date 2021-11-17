@@ -1,0 +1,165 @@
+.stepper-wrapper {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  .stepper {
+    width: 60%;
+    position: relative;
+    z-index: 1;
+
+    .progressbar li {
+      float: left;
+      width: 20%;
+      position: relative;
+      text-align: center;
+      list-style: none;
+
+      span {
+        color: #bebebe;
+      }
+    }
+
+    .progressbar li:before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      border: 2px solid #bebebe;
+      display: block;
+      margin: 0 auto 10px auto;
+      border-radius: 50%;
+      line-height: 27px;
+      background: #bebebe;
+      color: #bebebe;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .progressbar li:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background: #bebebe;
+      top: 10px;
+      left: -50%;
+      z-index: -1;
+    }
+
+    .progressbar li:first-child:after {
+      content: none;
+    }
+
+    .progressbar li.active:after {
+      background: #165c7d;
+    }
+
+    .progressbar li.active:before {
+      border-color: #165c7d;
+      background: #e8eff2;
+      color: #165c7d;
+    }
+
+    .active {
+      span {
+        color: #165c7d !important;
+      }
+    }
+  }
+}
+
+.aiolos-user-info {
+  margin-top: 20px;
+  padding: 15px 15px;
+
+  .text-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .text-bold {
+      font-size: 22px;
+      font-weight: 500;
+      color: #555;
+    }
+
+    span {
+      color: #9d9d9d;
+    }
+  }
+
+  .aiolos-form-group {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+
+    label {
+      font-weight: 600;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    input {
+      width: 20%;
+      height: 30px;
+    }
+    button {
+      width: 12%;
+      margin-left: 15px;
+      background-color: #165c7d;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-weight: 500;
+      transition: background 0.2s;
+
+      &:hover {
+        background-color: #1c546e;
+      }
+    }
+  }
+}
+
+.aiolos-msg-validacao {
+  padding-top: 15px;
+  font-size: 15px;
+  color: red;
+}
+
+.aiolos-footer {
+  padding: 20px 0 20px 15px;
+  position: absolute;
+  bottom: 0;
+  width: 97%;
+  background-color: #fff;
+
+  .new-coop {
+    margin-right: 15px;
+    width: 14%;
+    padding: 10px;
+    border: 2px solid #165c7d;
+    background-color: #165c7d;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.3s;
+
+    &:hover {
+      border: 2px solid #2291c5;
+      background-color: #2291c5;
+    }
+  }
+
+  button {
+    width: 14%;
+    padding: 10px;
+    border: 2px solid #165c7d;
+    background-color: #fff;
+    color: #1d7ca9;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
